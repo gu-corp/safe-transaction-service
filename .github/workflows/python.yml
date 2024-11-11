@@ -124,7 +124,7 @@ jobs:
         context: .
         file: docker/web/Dockerfile
         push: true
-        tags: safeglobal/safe-transaction-service:staging
+        tags: gulabs/safe-transaction-service:staging
         platforms: |
           linux/amd64
           linux/arm64
@@ -137,7 +137,7 @@ jobs:
         context: .
         file: docker/web/Dockerfile
         push: true
-        tags: safeglobal/safe-transaction-service:develop
+        tags: gulabs/safe-transaction-service:develop
         platforms: |
           linux/amd64
           linux/arm64
@@ -151,8 +151,8 @@ jobs:
         file: docker/web/Dockerfile
         push: true
         tags: |
-          safeglobal/safe-transaction-service:${{ github.event.release.tag_name }}
-          safeglobal/safe-transaction-service:latest
+          gulabs/safe-transaction-service:${{ github.event.release.tag_name }}
+          gulabs/safe-transaction-service:latest
         platforms: |
           linux/amd64
           linux/arm64
